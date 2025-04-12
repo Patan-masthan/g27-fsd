@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Day 8 Practice</title>
+  <style>
+    /* Navbar using Flexbox */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      background-color: #ee8ed6;
+      padding: 10px;
+    }
+    .navbar a {
+      color: rgb(66, 59, 59);
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    /* 3 Cards using Flexbox */
+    .cards {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px;
+    }
+    .card {
+      background-color: #76b9e0;
+      padding: 20px;
+      width: 30%;
+      text-align: center;
+    }
+
+    /* Position types */
+    .relative { position: relative; top: 10px; background: rgb(1, 13, 17); }
+    .absolute-container { position: relative; height: 100px; background: #ddd; }
+    .absolute { position: absolute; top: 10px; right: 10px; background: rgb(1, 15, 1); }
+    .fixed { position: fixed; bottom: 10px; right: 10px; background: rgb(245, 244, 244); padding: 5px; }
+    .sticky { position: sticky; top: 0; background: rgb(12, 12, 0); }
+
+    /* Float + Clear */
+    .float-box {
+      width: 100px;
+      height: 100px;
+      background: rgb(6, 192, 192);
+      float: left;
+      margin-right: 10px;
+    }
+    .clearfix::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    /* Responsive Boxes */
+    .responsive {
+      background: rgb(189, 45, 170);
+      margin: 10px 0;
+      padding: 10px;
+    }
+    .masthan { width: 50%; }
+    .mastha { width: 20em; }
+    .masth { width: 15rem; }
+    .mast { width: 30vw; }
+    .mas { height: 20vh; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div><a href="day1pics/ma.jpeg"><h1>Logo</h1></a></div>
+    <div>
+      <a href="day7.html"><h2>Home</h2></a>
+      <a href="about.html"><h2>Aboout</h2></a>
+      <a href="day6.html"><h2>Contact</h2></a>
+    </div>
+  </div>
+
+  <!-- Cards -->
+  <div class="cards">
+    <div class="card">Card 1</div>
+    <div class="card">Card 2</div>
+    <div class="card">Card 3</div>
+  </div>
+
+  <!-- Position Practice -->
+  <div class="relative">Relative Box</div>
+  <div class="absolute-container">
+    <div class="absolute">Absolute Box</div>
+  </div>
+  <div class="sticky">Sticky Box</div>
+  <div class="fixed">Fixed Box</div>
+
+  <!-- Float + Clear -->
+  <div class="clearfix">
+    <div class="float-box">Float</div>
+    <p>hi how are u welcome to sure trust day 8</p>
+  </div>
+
+  <!-- Responsive Boxes -->
+  <div class="responsive masthan">50% Width</div>
+  <div class="responsive mastha">20em Width</div>
+  <div class="responsive masth">15rem Width</div>
+  <div class="responsive mast">30vw Width</div>
+  <div class="responsive mas">20vh Height</div>
+
+</body>
+</html>

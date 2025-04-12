@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-position: center;
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      width: 280px;
+      height: 600px;
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 20px;
+      margin: 20px;
+      border: 2px solid #ddd;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+      box-sizing: border-box;
+      text-align: center;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .card h2 {
+      margin: 10px 0;
+      font-size: 22px;
+    }
+
+    .card p {
+      margin: 5px 0;
+      color: #555;
+      font-size: 16px;
+    }
+
+    .social-icons {
+      margin-top: 20px;
+    }
+
+    .social-icons a {
+      margin: 0 8px;
+      text-decoration: none;
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    .social-icons img {
+      width: 24px;
+      height: 24px;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.2);
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="day1pics/masthan.jpeg" alt="Profile Image">
+    <h2>Patan Masthan</h2>
+    <p>Frontend Developer</p>
+
+    <div class="social-icons">
+      <a href="https://www.facebook.com/login/device-based/regular/login/"><img src="day1pics/fb.png" alt="Facebook"></a>
+      <a href="www.linkedin.com/in/patan-masthan-7a82b8299"><img src="day1pics/ld.png" alt="LinkedIn"></a>
+      <a href="https://github.com/Patan-masthan"><img src="day1pics/gh.png" alt="GitHub"></a>
+    </div>
+
+    <button class="btn">Contact</button>
+    <p>masthimasthan786@gmail.com</p>
+    <p>amasha951@gmail.com</p>
+    <p>+91 9182736546</p>
+
+  </div>
+
+</body>
+</html>

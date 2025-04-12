@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Day 8 Practice</title>
+  <style>
+    /* Navbar using Flexbox */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      background-color: #333;
+      padding: 10px;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    /* 3 Cards using Flexbox */
+    .cards {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px;
+    }
+    .card {
+      background-color: #eee;
+      padding: 20px;
+      width: 30%;
+      text-align: center;
+    }
+
+    /* Position types */
+    .relative { position: relative; top: 10px; background: lightblue; }
+    .absolute-container { position: relative; height: 100px; background: #ddd; }
+    .absolute { position: absolute; top: 10px; right: 10px; background: lightgreen; }
+    .fixed { position: fixed; bottom: 10px; right: 10px; background: orange; padding: 5px; }
+    .sticky { position: sticky; top: 0; background: yellow; }
+
+    /* Float + Clear */
+    .float-box {
+      width: 100px;
+      height: 100px;
+      background: teal;
+      float: left;
+      margin-right: 10px;
+    }
+    .clearfix::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    /* Responsive Boxes */
+    .responsive {
+      background: pink;
+      margin: 10px 0;
+      padding: 10px;
+    }
+    .percent { width: 50%; }
+    .em { width: 20em; }
+    .rem { width: 15rem; }
+    .vw { width: 30vw; }
+    .vh { height: 20vh; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div><a href="#">Logo</a></div>
+    <div>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+
+  <!-- Cards -->
+  <div class="cards">
+    <div class="card">Card 1</div>
+    <div class="card">Card 2</div>
+    <div class="card">Card 3</div>
+  </div>
+
+  <!-- Position Practice -->
+  <div class="relative">Relative Box</div>
+  <div class="absolute-container">
+    <div class="absolute">Absolute Box</div>
+  </div>
+  <div class="sticky">Sticky Box</div>
+  <div class="fixed">Fixed Box</div>
+
+  <!-- Float + Clear -->
+  <div class="clearfix">
+    <div class="float-box">Float</div>
+    <p>This text comes after the float box.</p>
+  </div>
+
+  <!-- Responsive Boxes -->
+  <div class="responsive percent">50% Width</div>
+  <div class="responsive em">20em Width</div>
+  <div class="responsive rem">15rem Width</div>
+  <div class="responsive vw">30vw Width</div>
+  <div class="responsive vh">20vh Height</div>
+
+</body>
+</html>

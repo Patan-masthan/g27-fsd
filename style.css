@@ -1,0 +1,28 @@
+h1{
+    color: red;
+    font-size: 40px;
+    
+}
+a {
+    color: navy;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+.masthimasthan{
+    color: blue;
+    background-color: pink;
+    padding: 0PX;
+    margin: 0PX;
+}
+.chotu{
+    color: #FF5733;
+    text-decoration: underline;
+}
+#projects
+{
+    color: #FF5733;
+            text-decoration: underline;
+}
